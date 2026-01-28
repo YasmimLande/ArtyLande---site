@@ -1,0 +1,3 @@
+- [x] Ajustar o texto da seção Sobre a Artista no index.html: dividir o primeiro parágrafo para melhor harmonia visual e adicionar spans com classe 'gray-highlight' para palavras-chave adicionais.
+- [x] Adicionar estilo CSS para .gray-highlight no css/components.css: efeito de destaque cinza frio suave, similar ao dourado.
+- [x] Verificar as mudanças e confirmar que o texto está harmonioso e os destaques aplicados.

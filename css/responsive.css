@@ -1,0 +1,168 @@
+/* =====================================================
+   RESPONSIVE.CSS
+   Ajustes para celulares e tablets
+   ===================================================== */
+
+/* ---------- ATÉ 1024px (tablets e notebooks pequenos) ---------- */
+
+@media (max-width: 1024px) {
+
+  header {
+    padding: 1.2rem 2rem;
+  }
+
+  .hero {
+    min-height: 70vh;
+    padding: 4rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+  }
+
+  .hero p {
+    max-width: 520px;
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 4rem 2rem;
+  }
+
+  .gallery {
+    gap: 1.2rem;
+  }
+}
+
+/* ---------- ATÉ 768px (tablets e celulares grandes) ---------- */
+
+@media (max-width: 768px) {
+
+  /* Header */
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 65vh;
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+  }
+
+  .hero::before {
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 6vw, 2.6rem);
+  }
+
+  .hero p {
+    margin: 1rem auto 0;
+  }
+
+  /* Filtros */
+  .filter-group {
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.1rem;
+  }
+
+  /* Galeria */
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  /* Processo criativo + contato */
+  .process-contact {
+    text-align: center;
+  }
+
+  /* Formulário */
+  form {
+    max-width: 100%;
+  }
+
+  /* Social links */
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* ---------- ATÉ 480px (celulares) ---------- */
+
+@media (max-width: 480px) {
+
+  /* Logo */
+  header img {
+    max-width: 120px;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 60vh;
+    padding: 3rem 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  /* Seções */
+  section {
+    padding: 3rem 1.2rem;
+  }
+
+  /* Galeria */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    height: auto;
+  }
+
+  /* Modal */
+  .modal-content {
+    padding: 1.2rem;
+  }
+
+  /* Botões */
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .filter-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Formulário */
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  /* Social */
+  .social-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}

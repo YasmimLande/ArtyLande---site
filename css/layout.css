@@ -1,0 +1,316 @@
+/* =========================
+   HEADER / NAVEGAÇÃO
+========================= */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  padding: 1rem;
+  background: rgba(31, 63, 91, 0.92);
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  font-size: 1.8rem;
+  color: var(--cinza-frio);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--cor-texto-secundario);
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--dourado-sutil);
+}
+
+/* =========================
+   SEÇÕES GERAIS
+========================= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("../images/hero-obra.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(22, 44, 63, 0.65);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-subtitle {
+  color: var(--dourado-sutil);
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.hero-brief p {
+  color: var(--dourado-sutil);
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.about-text h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: var(--cinza-frio);
+}
+
+/* =========================
+   PORTFÓLIO
+========================= */
+.portfolio .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--cinza-frio);
+  margin-bottom: 2rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gallery-item h4 {
+  margin-top: 8px;
+}
+
+/* =========================
+   MODAL
+========================= */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 2rem;
+  width: 80%;
+  max-width: 600px;
+  background: var(--azul-secundario);
+  color: var(--branco-principal);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* =========================
+   PROCESSO CRIATIVO
+========================= */
+.process {
+  position: relative;
+  padding: 6rem 1rem;
+  overflow: hidden;
+}
+
+.process-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/bastidor1.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.55);
+  z-index: 1;
+}
+
+.process-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.process-overlay p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* =========================
+   CONTATO
+========================= */
+.contact-bg {
+  position: relative;
+  padding: 6rem 1rem;
+  background-image: url("../images/bastidor1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(22, 44, 63, 0.75);
+  z-index: 1;
+}
+
+.contact-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-links {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+/* =========================
+   SEÇÕES COM IMAGEM DE FUNDO
+========================= */
+.image-section {
+  position: relative;
+  background-image: url("../images/bastidor1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(22, 44, 63, 0.75);
+  z-index: 1;
+}
+
+.section-on-image {
+  position: relative;
+  z-index: 2;
+  padding: 6rem 1rem;
+  text-align: center;
+  color: var(--branco-principal);
+}
+
+.section-on-image p {
+    color: var(--branco-suave);
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--azul-escuro);
+  color: var(--branco-suave);
+}
+
+/* =========================
+   SPLASH
+========================= */
+#splash {
+  position: fixed;
+  inset: 0;
+  background-color: var(--azul-primario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#splash img {
+  width: 400px;
+}

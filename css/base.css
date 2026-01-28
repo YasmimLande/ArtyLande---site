@@ -1,0 +1,100 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   FONTES
+========================= */
+@font-face {
+  font-family: 'The Seasons';
+  src: url('../assets/fonts/TheSeasons-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =========================
+   VARIÁVEIS TIPOGRÁFICAS
+========================= */
+:root {
+  --font-titulo: 'The Seasons', serif;
+  --font-subtitulo: 'EB Garamond', serif;
+  --font-texto: 'Source Serif 4', serif;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: var(--font-texto);
+  color: var(--branco-suave);
+  background-color: var(--azul-primario);
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+h1,
+.hero-title {
+  font-family: var(--font-titulo);
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  font-size: 3.5rem;
+}
+
+h2,
+h3,
+.section-title {
+  font-family: var(--font-titulo);
+  font-weight: normal;
+}
+
+/* =========================
+   SUBTÍTULOS E DESTAQUES
+========================= */
+.gallery-item h4,
+.modal-content strong {
+  font-family: var(--font-subtitulo);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.section-title {
+  font-family: var(--font-subtitulo);
+  font-weight: 500;
+}
+
+/* =========================
+   TEXTO CORRIDO
+========================= */
+p,
+.about-content,
+.process-content,
+.modal-content,
+.contact-form input,
+.contact-form textarea {
+  font-family: var(--font-texto);
+  font-weight: 400;
+}
+
+p {
+  max-width: 68ch; /* leitura editorial */
+  margin-inline: auto;
+}
+
+.about-text p {
+  margin-bottom: 1.2rem;
+}
+
+/* =========================
+   UTILITÁRIOS DE TEXTO
+========================= */
+.highlight {
+  font-family: var(--font-subtitulo);
+  letter-spacing: 0.1em;
+  opacity: 0.85;
+}

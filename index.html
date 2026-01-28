@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ArtyLande - Pinturas em Guache, Aquarela e Caneta</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Explore o universo artístico de Yasmim Lande, artista brasileira especializada em guache, aquarela e caneta. Obras originais à venda para Brasil e exterior.">
+  <meta name="keywords" content="arte brasileira, pintura guache, aquarela, caneta, obras à venda, artista contemporânea">
+  <meta name="author" content="Yasmim Lande">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash">
+    <img src="images/logo-arty-lande.png" alt="Arty Lande">
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-logo"><a>ArtyLande</a></div>
+      <ul class="nav-menu">
+        <li><a href="#home" data-i18n="menuHome">Home</a></li>
+        <li><a href="#sobre" data-i18n="menuAbout">Sobre</a></li>
+        <li><a href="#portfolio" data-i18n="menuPortfolio">Portfólio</a></li>
+        <li><a href="#processo" data-i18n="menuProcess">Processo</a></li>
+        <li><a href="#contato" data-i18n="menuContact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-title" data-i18n="heroTitle">
+          Onde a Arte, a Ciência e a Brasilidade se encontram.
+        </h1>
+
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn-primary" data-i18n="heroButtonPortfolio">Ver Portfólio</a>
+          <a href="#sobre" class="btn-secondary" data-i18n="heroButtonAbout">Sobre a Artista</a>
+        </div>
+
+        <div class="hero-brief">
+          <p data-i18n="heroSubtitle">
+            Apenas uma universitária imprimindo no papel emoções, memórias e a sua própria essência.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="about">
+      <div class="container">
+        <div class="about-content">
+          <img src="images/artista-foto.jpg.jpg"
+               alt="Foto de Yasmim Lande"
+               class="about-image"
+               loading="lazy">
+
+          <div class="about-text">
+            <h2 class="section-title">Sobre a Artista</h2>
+            <p>
+              <span class="gray-highlight">Eu e você</span> precisamos de
+              <span class="gray-highlight">válvulas de escape</span>.
+              A minha é retratar a própria
+              <span class="gray-highlight">realidade</span>.
+            </p>
+
+            <p>
+              Os sacrifícios que o
+              <span class="gray-highlight">estudo</span> exige,
+              a enormidade do mundo visto pela
+              <span class="gray-highlight">ciência</span>,
+              e o universo que cada
+              <span class="gray-highlight">ser</span> humano carrega.
+              Além do fato de que ser estudante de curso integral no
+              <span class="gray-highlight">Brasil</span> também pede renda extra.
+            </p>
+
+            <p>
+              Nessa brincadeira, comecei a trabalhar com <span class="highlight"> técnicas tradicionais</span>.
+              Meu <span class="highlight">estilo</span> é indefinido:
+              do retrato humano à anatomia, do anime à expressão simbólica.
+              Uso <span class="highlight">guache, aquarela e caneta</span>,
+              sempre com <span class="highlight">brasilidade no traço</span>.
+            </p>
+
+            <p>
+              <span class="highlight">Seja bem-vindo</span> ao meu mundo artístico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2 class="section-title">Portfólio</h2>
+
+        <div class="filters">
+          <select id="filter-tecnica">
+            <option value="all">Todas as Técnicas</option>
+            <option value="guache">Guache</option>
+            <option value="aquarela">Aquarela</option>
+            <option value="caneta">Caneta</option>
+          </select>
+
+          <select id="filter-tamanho">
+            <option value="all">Todos os Tamanhos</option>
+            <option value="pequena">Pequena</option>
+            <option value="media">Média</option>
+            <option value="grande">Grande</option>
+          </select>
+        </div>
+
+        <div class="gallery" id="gallery"></div>
+      </div>
+
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="modal-image" alt="">
+          <h3 id="modal-title"></h3>
+          <p id="modal-details"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Processo + Contato -->
+    <section class="image-section">
+      <div class="image-overlay"></div>
+
+      <div id="processo" class="container section-on-image">
+        <h2 class="section-title">Processo Criativo</h2>
+        <p>
+          Trabalho com técnicas tradicionais porque a <span class="golden-highlight">guache</span>, a <span class="golden-highlight">aquarela</span> e a <span class="golden-highlight">caneta</span> me permitem sentir cada traço e pincelada. Meu estilo não é fixo: ele se move conforme o tema, atravessando o retrato, o simbólico e o orgânico, sempre buscando traduzir sensações que não cabem em palavras.
+        </p>
+
+        <p>
+          Minha identidade artística habita o entre-lugar. Entre arte e ciência, entre disciplina e intuição, entre criar e resistir. A <span class="golden-highlight">brasilidade</span> aparece como contexto e pulsação, não como ornamento.
+        </p>
+
+        <p>
+          Cada obra é uma tentativa de afirmar que <span class="golden-highlight">sensibilidade</span> também é conhecimento — e que criar, para mim, é uma forma de permanecer inteira.
+        </p>
+
+        <p>
+          Explore meu processo criativo pelas redes sociais. Compartilho criações, bastidores e encomendas personalizadas. Prometo: cada postagem vale a pena.
+        </p>
+      </div>
+
+      <div id="contato" class="container section-on-image">
+        <h2 class="section-title">Contato</h2>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Nome" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Mensagem" required></textarea>
+          <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+
+        <div class="contact-links">
+          <a href="https://instagram.com/artylande" target="_blank">Instagram</a>
+          <a href="mailto:yasmimlande@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Yasmim Lande. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/data.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
